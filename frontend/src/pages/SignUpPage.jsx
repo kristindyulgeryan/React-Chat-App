@@ -10,6 +10,7 @@ import {
   MessageSquare,
   User,
 } from "lucide-react";
+import AuthImagePattern from "../components/AuthImagePattern.jsx";
 
 console.log(User);
 const SignUpPage = () => {
@@ -143,6 +144,12 @@ const SignUpPage = () => {
           </div>
         </div>
       </div>
+
+      {/* right side */}
+      <AuthImagePattern
+        title="Join our community"
+        subtitle="Connect with friends, share moments, and stay in touch with your loved ones."
+      />
     </div>
   );
 };
