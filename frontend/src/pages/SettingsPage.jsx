@@ -1,8 +1,9 @@
 import { THEMES } from "../constants/index.js";
 import { useThemeStore } from "../store/useThemeStore.js";
+import { Send } from "lucide-react";
 
 const PREVIEW_MESSAGE = [
-  { id: 1, content: "Hey, HOw's it going?", isSent: false },
+  { id: 1, content: "Hey, How's it going?", isSent: false },
   {
     id: 2,
     content: "I'm doing gret! Just working on some new features",
@@ -40,7 +41,7 @@ const SettingsPage = () => {
                   <div className="rounded bg-neutral"></div>
                 </div>
               </div>
-              <span className="font medium w-full truncate text-center text-[11px]">
+              <span className="w-full truncate text-center text-[11px] font-medium">
                 {t.charAt(0).toUpperCase() + t.slice(1)}
               </span>
             </button>
@@ -49,6 +50,62 @@ const SettingsPage = () => {
 
         {/* Preview section */}
         <h3 className="mb-3 text-lg font-semibold">Preview</h3>
+        <div className="overflow-hidden rounded-xl border border-base-300 bg-base-100 shadow-lg">
+          <div className="bg-base-200 p-4">
+            <div className="mx-auto max-w-lg">
+              {/* Chat header */}
+              <div className="border-b border-base-300 bg-base-100 px-4 py-3">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary font-medium text-primary-content">
+                    J
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-medium">John Doe</h3>
+                    <p className="text-base-content/70 text-xs">Online</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Chat Messages */}
+              <div className="min-h-[200px] space-y-4 overflow-y-auto bg-base-100 p-4">
+                {PREVIEW_MESSAGE.map((message) => (
+                  <div
+                    key={message.id}
+                    className={`flex ${message.isSent ? "justify-end" : "justify-start"}`}
+                  >
+                    {" "}
+                    <div
+                      className={`max-w-[80%] rounded-xl p-3 shadow-sm ${message.isSent ? "text-primary-content/70" : "text-base-content/70"}`}
+                    >
+                      <p className="text-sm">{message.content}</p>
+                      <p
+                        className={`mt-1.5 text-[10px] ${message.isSent ? "text-primary-content/70" : "text-base-content/70"}`}
+                      >
+                        12:00 PM
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Chat Input */}
+              <div className="border-t border-base-300 bg-base-100 p-4">
+                <div className="flex gap-2">
+                  <input
+                    type="text"
+                    className="input-bordered input h-10 flex-1 text-sm"
+                    placeholder="Type a message..."
+                    value="This is a preview"
+                    readOnly
+                  />
+                  <button className="btn btn-primary h-10 min-h-0">
+                    <Send size={18} />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
