@@ -13,7 +13,6 @@ const app = express();
 
 const PORT = process.env.PORT;
 
-app.use(express.json());
 app.use(cookieParser());
 
 app.use(
@@ -22,7 +21,8 @@ app.use(
     credentials: true,
   })
 );
-
+app.use(express.json({ limit: "20mb" }));
+app.use(express.urlencoded({ limit: "20mb", extended: true }));
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
