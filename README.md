@@ -4,7 +4,7 @@ A modern, responsive real-time chat application built with React, Node.js, and S
 🔗 Live App: [https://react-chat-app-491f.onrender.com](https://react-chat-app-491f.onrender.com)
 
 
-
+![Chat App Screenshot](frontend/public/chat-app.png)
 
 
 ## 🛠️ Tools & Technologies
