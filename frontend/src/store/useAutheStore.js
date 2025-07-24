@@ -8,7 +8,7 @@ const BASE_URL =
 
 export const useAuthStore = create((set, get) => ({
   authUser: null,
-  isSigninUp: false,
+  isSigningUp: false,
   isLoggingIn: false,
   isUpdatingProfile: false,
   isCheckingAuth: true,
@@ -31,7 +31,7 @@ export const useAuthStore = create((set, get) => ({
   },
 
   signup: async (data) => {
-    set({ isSigninUp: true });
+    set({ isSigningUp: true });
     try {
       const res = await axiosInstance.post("/auth/signup", data);
       set({ authUser: res.data });
@@ -40,7 +40,7 @@ export const useAuthStore = create((set, get) => ({
     } catch (error) {
       toast.error(error.response.data.message);
     } finally {
-      set({ isSigninUp: false });
+      set({ isSigningUp: false });
     }
   },
 
