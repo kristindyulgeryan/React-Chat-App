@@ -6,9 +6,18 @@ A modern, responsive real-time chat application built with React, Node.js, and S
 
 
 
+
 ## 🛠️ Tools & Technologies
 
-🟨 &nbsp;&nbsp; ⚛️ &nbsp;&nbsp; 🌐 &nbsp;&nbsp; 💾 &nbsp;&nbsp; 🔒 &nbsp;&nbsp; 🔄 &nbsp;&nbsp; ☁️ &nbsp;&nbsp; 🐍 &nbsp;&nbsp; 🦴 &nbsp;&nbsp; 📦
+<p>
+  <img src="https://cdn-icons-png.flaticon.com/512/919/919828.png" alt="JavaScript" width="50" />
+  <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="React" width="50" />
+  <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="Node.js" width="50" />
+  <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" width="50" />
+  <img src="https://cdn-icons-png.flaticon.com/512/919/919837.png" alt="Tailwind CSS" width="50" />
+</p>
+
+
 
 
 
