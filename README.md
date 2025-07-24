@@ -9,7 +9,7 @@ A modern, responsive real-time chat application built with React, Node.js, and S
 
 ## 🛠️ Tools & Technologies
 
-<p style="font-size: 40px; display: flex; gap: 20px; align-items: center;">
+<p style="font-size: 60px; display: flex; gap: 25px; align-items: center;">
   <span title="JavaScript">🟨</span>
   <span title="React">⚛️</span>
   <span title="Web / Internet">🌐</span>
@@ -19,7 +19,11 @@ A modern, responsive real-time chat application built with React, Node.js, and S
   <span title="Cloud / Deployment">☁️</span>
   <span title="MongoDB / NoSQL">🦴</span>
   <span title="Packages / npm">📦</span>
+  <span title="GitHub">🐱‍💻</span>
 </p>
+
+
+
 
 
 
